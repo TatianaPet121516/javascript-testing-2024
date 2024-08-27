@@ -1,0 +1,51 @@
+Sweets page functionality:
+  1. No placeholder for product search.
+  2. Not all products have their image.
+  3. There is no option to select the quantity of the product before adding it to the basket.
+  4. There is no way to view all the products presented at once.
+  5. There is too little information about each product.
+
+Login functionality:
+  1. There is no possibility for new users to register.
+  2. The "Email address" prefix must not begin with a uppercase letter, be shorter than two characters, and contain the following characters: "! # $ % ^ & * + = / | ' ` ~".
+  3. The "Email address" domain must contain a period (".") followed by the top-level domain name.
+  4. Login to "Your account" should not be performed when entering any emails and passwords other than those specified by the program ("test@user.com" and "qwerty"). 
+
+Your Account functionality:
+  1. There is no way to save, check and change (if necessary) personal data, e-mail, password, delivery address.
+  2. It is impossible to change the number of items in the "Your Basket"; they can only be deleted.
+  3. There is no way to proceed to payment for items in the "Your Basket".
+  4. There is a missing summary table about the cost of purchases per month/year.
+  5. There is no option (button) to log out of the account.
+
+Basket functionality:
+  Price calculation functionality:
+
+  Does the price get calculate in the following scenarios:
+    1. Price is correct with a single item.
+    2. Price is correct with multiple items.
+    3. Price is correct when an item is removed.
+    4. Price is 0 after the 'empty basket' is clicked.
+    5. There is no way to change the number of items in the basket, you can only delete it.
+    6. Price is incorrect if added to standard shipping with an empty basket (should be 0 and not 1.99).
+    7. Price is price is incorrect (NAN) if added to standard shipping.
+    8. There is no option to use standard shipping when using a promo code.
+    9. Fail: if the total cost of the items in the basket is an integer then when adding standard shipping we receive an amount equal to ("total cost of the items in the basket"*100 + "cost of standard shipping").
+
+  Billing address functionality:
+    Form Validation:
+    1. The "First name" must not start with a lowercase letter or start with a number, be less than two letters long.
+    2. The "Last name" must not start with a lowercase letter or start with a number, be less than two letters long.
+    3. The email must consist of email prefix and email domain, and must contain the @ sign between them.
+    4. The email prefix must not begin with a uppercase letter, be shorter than two characters, and contain the following characters: "! # $ % ^ & * + = / | ' ` ~".
+    5. The email domain must contain a period (".") followed by the top-level domain name.
+    6. The "Address" must not start with a lowercase letter, be less than two letters long.
+    7. In the section "Country" -> "choose ..." there should be a choice of countries,and not just one country (United Kingdom).
+    8. In the section "City" -> "select ..." there should be more choice of cities.
+    9. The Zip (postal code) must contain at least five digits, a hyphen, and may contain uppercase letters.
+
+  Payment functionality:
+    1. The "Name on card" must not begin with a lowercase letter, should not contain less than two words, each of which must not be less than two characters long, and must not contain the following symbols: "! # $ % ^ & * + = / | ' ` ~".
+    2. The "Credit card number" field must contain only 16 digits and three spaces or three hyphens between them, and must not contain other letters or symbols.
+    3. The "Expiration" field must contain only two digits indicating the month, a / sign between them, and two digits indicating the year. And must not contain other letters or symbols.
+    4. CVV field must contain only three digits, must not be a negative number or contain other letters or symbols. This field must not contain a bidirectional counter.
