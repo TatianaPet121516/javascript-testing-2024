@@ -13,3 +13,19 @@
 
 - Test plan/document
 - testomat tool
+
+### Day 3
+
+- SDLC
+- Waterfall
+- Agile
+- Kanban
+- Trello
+- Working in a team.
+
+### Day 4
+
+- Front-end
+- Backend
+- REST api
+- Postman
